@@ -12,6 +12,20 @@ langHTMLElement.addEventListener("click", function ()
     langHTMLElement.textContent = newLang;
 })
 
+const burgerMenuHTMLElement = document.getElementById("burger");
+const bodyHTMLElement = document.body;
+
+burgerMenuHTMLElement.addEventListener("click", function ()
+{
+    let actualBodyOpacity = bodyHTMLElement.style.opacity;
+
+    if (actualBodyOpacity == 0.6)
+        bodyHTMLElement.style.opacity = "100%";
+    else
+        bodyHTMLElement.style.opacity = "60%";
+
+});
+
 $(function ()
 {
     let count = 0;
