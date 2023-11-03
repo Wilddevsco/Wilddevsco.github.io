@@ -30,7 +30,7 @@ body
     border-bottom: 0.3vh solid var(--pink);
 }
 
-#menuToggle
+#side-menu
 {
     display: block;
     position: relative;
@@ -40,21 +40,21 @@ body
     user-select: none;
 }
 
-#menuToggle a
+#side-menu a
 {
     text-decoration: none;
     color: var(--pink);
 
-    transition: color 0.3s ease;
+    transition: color .2s ease;
 }
 
-#menuToggle a:hover
+#side-menu a:hover
 {
     color: var(--light);
 }
 
 
-#menuToggle input
+#side-menu input
 {
     display: block;
     width: 40px;
@@ -67,8 +67,6 @@ body
 
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
-
-    -webkit-touch-callout: none;
 }
 
 .lan-menu
@@ -93,7 +91,7 @@ body
 /*
  * Just a quick hamburger
  */
-#menuToggle span
+#side-menu span
 {
     display: block;
     width: 33px;
@@ -113,30 +111,30 @@ body
             opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
+#side-menu span:first-child
 {
     transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
+#side-menu span:nth-last-child(2)
 {
     transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked ~ span
+#side-menu input:checked ~ span
 {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: var(--light);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3)
+#side-menu input:checked ~ span:nth-last-child(3)
 {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
+#side-menu input:checked ~ span:nth-last-child(2)
 {
     transform: rotate(-45deg) translate(0, -1px);
 }
@@ -171,7 +169,7 @@ body
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
+#side-menu input:checked ~ ul
 {
     transform: none;
 }
